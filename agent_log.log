@@ -1,0 +1,157 @@
+2025-04-06 15:51:07,894 - __main__ - INFO - --- Mobile Automation Agent Starting ---
+2025-04-06 15:51:07,944 - adb_controller - INFO - Connected to device: RZCT80VX2NE
+2025-04-06 15:51:08,192 - adb_controller - INFO - Screen dimensions: 1080x2408
+2025-04-06 15:52:02,275 - __main__ - INFO - Received Task: In the current page give the email as Oliver Jones and password as adhi2512
+2025-04-06 15:52:02,275 - __main__ - INFO - --- Step 1 / 15 ---
+2025-04-06 15:52:02,275 - __main__ - INFO - Taking screenshot...
+2025-04-06 15:52:02,969 - __main__ - INFO - Analyzing screenshot with Omniparser...
+2025-04-06 15:52:02,969 - omniparser_sim - INFO - --- Calling REAL Omniparser service at http://127.0.0.1:7788/ ---
+2025-04-06 15:52:03,407 - httpx - INFO - HTTP Request: GET http://127.0.0.1:7788/config "HTTP/1.1 200 OK"
+2025-04-06 15:52:03,750 - httpx - INFO - HTTP Request: GET http://127.0.0.1:7788/gradio_api/info?serialize=False "HTTP/1.1 200 OK"
+2025-04-06 15:52:04,350 - httpx - INFO - HTTP Request: GET http://127.0.0.1:7788/gradio_api/heartbeat/f48c367d-19c1-4558-88b5-494194c1bf49 "HTTP/1.1 200 OK"
+2025-04-06 15:52:04,372 - httpx - INFO - HTTP Request: POST http://127.0.0.1:7788/gradio_api/upload "HTTP/1.1 200 OK"
+2025-04-06 15:52:04,729 - httpx - INFO - HTTP Request: POST http://127.0.0.1:7788/gradio_api/queue/join "HTTP/1.1 200 OK"
+2025-04-06 15:52:07,401 - httpx - INFO - HTTP Request: GET http://127.0.0.1:7788/gradio_api/queue/data?session_hash=f48c367d-19c1-4558-88b5-494194c1bf49 "HTTP/1.1 200 OK"
+2025-04-06 15:52:09,335 - httpx - INFO - HTTP Request: GET http://127.0.0.1:7788/gradio_api/file=C:\Users\jayan\AppData\Local\Temp\gradio\6677080ef005c9cfa9a59d36fc3dfad982d7df420f9faf3090c2368146ce56f0\image.webp "HTTP/1.1 200 OK"
+2025-04-06 15:52:09,351 - omniparser_sim - WARNING - Could not find 'path' in annotated image result: C:\Users\jayan\AppData\Local\Temp\gradio\710c91350860b103fa501c46aa5d84de6ab351c007a61f056b6ba4427461f5b8\image.webp. Proceeding without annotated image.
+2025-04-06 15:52:09,357 - omniparser_sim - INFO - Successfully parsed 40 elements from Omniparser.
+2025-04-06 15:52:09,358 - __main__ - WARNING - No annotated screenshot available from Omniparser.
+2025-04-06 15:52:09,358 - __main__ - INFO - Getting next action from LLM...
+2025-04-06 15:52:09,359 - llm_handler - INFO - --- Sending Request to LLM ---
+2025-04-06 15:52:09,359 - llm_handler - INFO - Sending 1 image(s) to LLM: original screenshot
+2025-04-06 15:52:14,441 - llm_handler - INFO - LLM suggested action: {'action': 'INPUT_TEXT', 'element_index': 19, 'text': 'Oliver Jones'}
+2025-04-06 15:52:14,441 - llm_handler - INFO - LLM reasoning: The element with index 19 is an editable field for email address,  as indicated by its content 'Email address @tutamail.com...'. Inputting the email address is the first step towards completing the task.
+2025-04-06 15:52:14,442 - __main__ - INFO - Executing action: {'action': 'INPUT_TEXT', 'element_index': 19, 'text': 'Oliver Jones'}
+2025-04-06 15:52:14,442 - action_executor - INFO - INPUT_TEXT: Tapping element 19 first.
+2025-04-06 15:52:14,443 - adb_controller - INFO - Tapping at coordinates: (540, 707)
+2025-04-06 15:52:15,012 - action_executor - INFO - Executing INPUT_TEXT: 'Oliver Jones'
+2025-04-06 15:52:15,012 - adb_controller - INFO - Inputting text: Oliver Jones (escaped: Oliver%sJones)
+2025-04-06 15:52:15,590 - adb_controller - INFO - Waiting for 2.0 seconds.
+2025-04-06 15:52:17,591 - __main__ - INFO - --- Step 2 / 15 ---
+2025-04-06 15:52:17,591 - __main__ - INFO - Taking screenshot...
+2025-04-06 15:52:18,214 - __main__ - INFO - Analyzing screenshot with Omniparser...
+2025-04-06 15:52:18,215 - omniparser_sim - INFO - --- Calling REAL Omniparser service at http://127.0.0.1:7788/ ---
+2025-04-06 15:52:18,530 - httpx - INFO - HTTP Request: GET http://127.0.0.1:7788/config "HTTP/1.1 200 OK"
+2025-04-06 15:52:18,843 - httpx - INFO - HTTP Request: GET http://127.0.0.1:7788/gradio_api/info?serialize=False "HTTP/1.1 200 OK"
+2025-04-06 15:52:19,316 - httpx - INFO - HTTP Request: GET http://127.0.0.1:7788/gradio_api/heartbeat/5256f7bd-e8e9-4247-9840-5a38dd4f2654 "HTTP/1.1 200 OK"
+2025-04-06 15:52:19,342 - httpx - INFO - HTTP Request: POST http://127.0.0.1:7788/gradio_api/upload "HTTP/1.1 200 OK"
+2025-04-06 15:52:19,681 - httpx - INFO - HTTP Request: POST http://127.0.0.1:7788/gradio_api/queue/join "HTTP/1.1 200 OK"
+2025-04-06 15:52:22,266 - httpx - INFO - HTTP Request: GET http://127.0.0.1:7788/gradio_api/queue/data?session_hash=5256f7bd-e8e9-4247-9840-5a38dd4f2654 "HTTP/1.1 200 OK"
+2025-04-06 15:52:24,843 - httpx - INFO - HTTP Request: GET http://127.0.0.1:7788/gradio_api/file=C:\Users\jayan\AppData\Local\Temp\gradio\253964e9f1a038cea6597ff93f08e938b9da0475d708f722cc8bcb33914f6a28\image.webp "HTTP/1.1 200 OK"
+2025-04-06 15:52:24,856 - omniparser_sim - WARNING - Could not find 'path' in annotated image result: C:\Users\jayan\AppData\Local\Temp\gradio\7eb6fef2660b1d925d6939afee76be752a351816b3094a16c165d1d2a6aeb5b2\image.webp. Proceeding without annotated image.
+2025-04-06 15:52:24,863 - omniparser_sim - INFO - Successfully parsed 56 elements from Omniparser.
+2025-04-06 15:52:24,864 - __main__ - WARNING - No annotated screenshot available from Omniparser.
+2025-04-06 15:52:24,864 - __main__ - INFO - Getting next action from LLM...
+2025-04-06 15:52:24,865 - llm_handler - INFO - --- Sending Request to LLM ---
+2025-04-06 15:52:24,866 - llm_handler - INFO - Sending 1 image(s) to LLM: original screenshot
+2025-04-06 15:52:28,199 - llm_handler - INFO - LLM suggested action: {'action': 'TAP', 'element_index': 40}
+2025-04-06 15:52:28,199 - llm_handler - INFO - LLM reasoning: The keyboard is visible, indicating that the email field is focused (or at least an input field is in focus).  The next step is to input the password. Element 40 appears to be the password input field, so tapping it will bring it into focus to allow for the next INPUT_TEXT action.
+2025-04-06 15:52:28,200 - __main__ - INFO - Executing action: {'action': 'TAP', 'element_index': 40}
+2025-04-06 15:52:28,200 - action_executor - INFO - Executing TAP on element 40 ('Pane' at (540, 490)
+2025-04-06 15:52:28,201 - adb_controller - INFO - Tapping at coordinates: (540, 490)
+2025-04-06 15:52:28,277 - adb_controller - INFO - Waiting for 2.0 seconds.
+2025-04-06 15:52:30,279 - __main__ - INFO - --- Step 3 / 15 ---
+2025-04-06 15:52:30,279 - __main__ - INFO - Taking screenshot...
+2025-04-06 15:52:30,885 - __main__ - INFO - Analyzing screenshot with Omniparser...
+2025-04-06 15:52:30,886 - omniparser_sim - INFO - --- Calling REAL Omniparser service at http://127.0.0.1:7788/ ---
+2025-04-06 15:52:31,194 - httpx - INFO - HTTP Request: GET http://127.0.0.1:7788/config "HTTP/1.1 200 OK"
+2025-04-06 15:52:31,525 - httpx - INFO - HTTP Request: GET http://127.0.0.1:7788/gradio_api/info?serialize=False "HTTP/1.1 200 OK"
+2025-04-06 15:52:31,979 - httpx - INFO - HTTP Request: POST http://127.0.0.1:7788/gradio_api/upload "HTTP/1.1 200 OK"
+2025-04-06 15:52:31,983 - httpx - INFO - HTTP Request: GET http://127.0.0.1:7788/gradio_api/heartbeat/6da689ca-90c0-42ec-8c90-3203f0e3fd20 "HTTP/1.1 200 OK"
+2025-04-06 15:52:32,302 - httpx - INFO - HTTP Request: POST http://127.0.0.1:7788/gradio_api/queue/join "HTTP/1.1 200 OK"
+2025-04-06 15:52:34,946 - httpx - INFO - HTTP Request: GET http://127.0.0.1:7788/gradio_api/queue/data?session_hash=6da689ca-90c0-42ec-8c90-3203f0e3fd20 "HTTP/1.1 200 OK"
+2025-04-06 15:52:36,861 - httpx - INFO - HTTP Request: GET http://127.0.0.1:7788/gradio_api/file=C:\Users\jayan\AppData\Local\Temp\gradio\a67e82b6137fbd31f02030be52ca3dcfd60386c6ce0f8e9ad10c54effe9553d8\image.webp "HTTP/1.1 200 OK"
+2025-04-06 15:52:36,883 - omniparser_sim - WARNING - Could not find 'path' in annotated image result: C:\Users\jayan\AppData\Local\Temp\gradio\677183a46f2332562cc1dbebd21914fff521ec1f55da3218f8cd307586e2cb12\image.webp. Proceeding without annotated image.
+2025-04-06 15:52:36,889 - omniparser_sim - INFO - Successfully parsed 41 elements from Omniparser.
+2025-04-06 15:52:36,889 - __main__ - WARNING - No annotated screenshot available from Omniparser.
+2025-04-06 15:52:36,890 - __main__ - INFO - Getting next action from LLM...
+2025-04-06 15:52:36,890 - llm_handler - INFO - --- Sending Request to LLM ---
+2025-04-06 15:52:36,891 - llm_handler - INFO - Sending 1 image(s) to LLM: original screenshot
+2025-04-06 15:52:40,358 - llm_handler - INFO - LLM suggested action: {'action': 'INPUT_TEXT', 'element_index': 40, 'text': 'adhi2512'}
+2025-04-06 15:52:40,359 - llm_handler - INFO - LLM reasoning: The previous action tapped element 40, which is the password input field. Now, inputting the password 'adhi2512' as per the task instructions.
+2025-04-06 15:52:40,359 - __main__ - INFO - Executing action: {'action': 'INPUT_TEXT', 'element_index': 40, 'text': 'adhi2512'}
+2025-04-06 15:52:40,359 - action_executor - INFO - INPUT_TEXT: Tapping element 40 first.
+2025-04-06 15:52:40,360 - adb_controller - INFO - Tapping at coordinates: (8, 148)
+2025-04-06 15:52:40,987 - action_executor - INFO - Executing INPUT_TEXT: 'adhi2512'
+2025-04-06 15:52:40,987 - adb_controller - INFO - Inputting text: adhi2512 (escaped: adhi2512)
+2025-04-06 15:52:41,546 - adb_controller - INFO - Waiting for 2.0 seconds.
+2025-04-06 15:52:43,547 - __main__ - INFO - --- Step 4 / 15 ---
+2025-04-06 15:52:43,547 - __main__ - INFO - Taking screenshot...
+2025-04-06 15:52:44,222 - __main__ - INFO - Analyzing screenshot with Omniparser...
+2025-04-06 15:52:44,223 - omniparser_sim - INFO - --- Calling REAL Omniparser service at http://127.0.0.1:7788/ ---
+2025-04-06 15:52:44,546 - httpx - INFO - HTTP Request: GET http://127.0.0.1:7788/config "HTTP/1.1 200 OK"
+2025-04-06 15:52:44,936 - httpx - INFO - HTTP Request: GET http://127.0.0.1:7788/gradio_api/info?serialize=False "HTTP/1.1 200 OK"
+2025-04-06 15:52:45,417 - httpx - INFO - HTTP Request: GET http://127.0.0.1:7788/gradio_api/heartbeat/5aec28e8-874c-4cc5-ae24-4fdf564fa197 "HTTP/1.1 200 OK"
+2025-04-06 15:52:45,419 - httpx - INFO - HTTP Request: POST http://127.0.0.1:7788/gradio_api/upload "HTTP/1.1 200 OK"
+2025-04-06 15:52:45,754 - httpx - INFO - HTTP Request: POST http://127.0.0.1:7788/gradio_api/queue/join "HTTP/1.1 200 OK"
+2025-04-06 15:52:47,052 - httpx - INFO - HTTP Request: GET http://127.0.0.1:7788/gradio_api/queue/data?session_hash=5aec28e8-874c-4cc5-ae24-4fdf564fa197 "HTTP/1.1 200 OK"
+2025-04-06 15:52:48,792 - httpx - INFO - HTTP Request: GET http://127.0.0.1:7788/gradio_api/file=C:\Users\jayan\AppData\Local\Temp\gradio\d23cbee2b0e0e75a6abf8204606eedb4d92e3e7f55251b07407028673db74fee\image.webp "HTTP/1.1 200 OK"
+2025-04-06 15:52:48,804 - omniparser_sim - WARNING - Could not find 'path' in annotated image result: C:\Users\jayan\AppData\Local\Temp\gradio\c451dbbab51e435513a5a9d33865ba4827cc54b6e1bef8cf2e768f5700ffd0b8\image.webp. Proceeding without annotated image.
+2025-04-06 15:52:48,806 - omniparser_sim - INFO - Successfully parsed 34 elements from Omniparser.
+2025-04-06 15:52:48,807 - __main__ - WARNING - No annotated screenshot available from Omniparser.
+2025-04-06 15:52:48,807 - __main__ - INFO - Getting next action from LLM...
+2025-04-06 15:52:48,808 - llm_handler - INFO - --- Sending Request to LLM ---
+2025-04-06 15:52:48,808 - llm_handler - INFO - Sending 1 image(s) to LLM: original screenshot
+2025-04-06 15:52:52,125 - llm_handler - INFO - LLM suggested action: {'action': 'TAP', 'element_index': 11}
+2025-04-06 15:52:52,125 - llm_handler - INFO - LLM reasoning: The current screen shows a dialog box asking to leave the site.  The task is to input email and password on the current page.  Tapping 'Cancel' (element 11) will dismiss the dialog and allow interaction with the underlying form, enabling the completion of the task.
+2025-04-06 15:52:52,126 - __main__ - INFO - Executing action: {'action': 'TAP', 'element_index': 11}
+2025-04-06 15:52:52,126 - action_executor - INFO - Executing TAP on element 11 ('Cancel' at (583, 1369)
+2025-04-06 15:52:52,126 - adb_controller - INFO - Tapping at coordinates: (583, 1369)
+2025-04-06 15:52:52,221 - adb_controller - INFO - Waiting for 2.0 seconds.
+2025-04-06 15:52:54,221 - __main__ - INFO - --- Step 5 / 15 ---
+2025-04-06 15:52:54,221 - __main__ - INFO - Taking screenshot...
+2025-04-06 15:52:54,901 - __main__ - INFO - Analyzing screenshot with Omniparser...
+2025-04-06 15:52:54,902 - omniparser_sim - INFO - --- Calling REAL Omniparser service at http://127.0.0.1:7788/ ---
+2025-04-06 15:52:55,209 - httpx - INFO - HTTP Request: GET http://127.0.0.1:7788/config "HTTP/1.1 200 OK"
+2025-04-06 15:52:55,542 - httpx - INFO - HTTP Request: GET http://127.0.0.1:7788/gradio_api/info?serialize=False "HTTP/1.1 200 OK"
+2025-04-06 15:52:55,999 - httpx - INFO - HTTP Request: GET http://127.0.0.1:7788/gradio_api/heartbeat/7c4deedc-15d9-4918-ad9a-10041b449b26 "HTTP/1.1 200 OK"
+2025-04-06 15:52:56,020 - httpx - INFO - HTTP Request: POST http://127.0.0.1:7788/gradio_api/upload "HTTP/1.1 200 OK"
+2025-04-06 15:52:56,342 - httpx - INFO - HTTP Request: POST http://127.0.0.1:7788/gradio_api/queue/join "HTTP/1.1 200 OK"
+2025-04-06 15:52:58,926 - httpx - INFO - HTTP Request: GET http://127.0.0.1:7788/gradio_api/queue/data?session_hash=7c4deedc-15d9-4918-ad9a-10041b449b26 "HTTP/1.1 200 OK"
+2025-04-06 15:53:00,586 - httpx - INFO - HTTP Request: GET http://127.0.0.1:7788/gradio_api/file=C:\Users\jayan\AppData\Local\Temp\gradio\d39e4ffe72bb511f9dd3f321329c5772672e413ea65fc4f8afe16fda9dbacc53\image.webp "HTTP/1.1 200 OK"
+2025-04-06 15:53:00,601 - omniparser_sim - WARNING - Could not find 'path' in annotated image result: C:\Users\jayan\AppData\Local\Temp\gradio\5f125059e4ae645896b0fe16db6ccf3a7674142c5501ac6c4e322b08ab2c60e8\image.webp. Proceeding without annotated image.
+2025-04-06 15:53:00,603 - omniparser_sim - INFO - Successfully parsed 36 elements from Omniparser.
+2025-04-06 15:53:00,604 - __main__ - WARNING - No annotated screenshot available from Omniparser.
+2025-04-06 15:53:00,604 - __main__ - INFO - Getting next action from LLM...
+2025-04-06 15:53:00,605 - llm_handler - INFO - --- Sending Request to LLM ---
+2025-04-06 15:53:00,606 - llm_handler - INFO - Sending 1 image(s) to LLM: original screenshot
+2025-04-06 15:53:03,852 - llm_handler - INFO - LLM suggested action: {'action': 'TAP', 'element_index': 11}
+2025-04-06 15:53:03,852 - llm_handler - INFO - LLM reasoning: The previous action, TAP(11, 'Cancel'), dismissed a dialog box. Element 11 ('Next') is now the most relevant interactive element to proceed with the task. Tapping it will submit the form and proceed to the next step, after the email and password are entered
+2025-04-06 15:53:03,853 - __main__ - INFO - Executing action: {'action': 'TAP', 'element_index': 11}
+2025-04-06 15:53:03,853 - action_executor - INFO - Executing TAP on element 11 ('Next' at (539, 2129)
+2025-04-06 15:53:03,854 - adb_controller - INFO - Tapping at coordinates: (539, 2129)
+2025-04-06 15:53:03,998 - adb_controller - INFO - Waiting for 2.0 seconds.
+2025-04-06 15:53:06,000 - __main__ - INFO - --- Step 6 / 15 ---
+2025-04-06 15:53:06,000 - __main__ - INFO - Taking screenshot...
+2025-04-06 15:53:06,645 - __main__ - INFO - Analyzing screenshot with Omniparser...
+2025-04-06 15:53:06,646 - omniparser_sim - INFO - --- Calling REAL Omniparser service at http://127.0.0.1:7788/ ---
+2025-04-06 15:53:06,965 - httpx - INFO - HTTP Request: GET http://127.0.0.1:7788/config "HTTP/1.1 200 OK"
+2025-04-06 15:53:07,275 - httpx - INFO - HTTP Request: GET http://127.0.0.1:7788/gradio_api/info?serialize=False "HTTP/1.1 200 OK"
+2025-04-06 15:53:07,774 - httpx - INFO - HTTP Request: GET http://127.0.0.1:7788/gradio_api/heartbeat/1a853828-ca2f-490f-a31b-feb9901389f7 "HTTP/1.1 200 OK"
+2025-04-06 15:53:07,778 - httpx - INFO - HTTP Request: POST http://127.0.0.1:7788/gradio_api/upload "HTTP/1.1 200 OK"
+2025-04-06 15:53:08,097 - httpx - INFO - HTTP Request: POST http://127.0.0.1:7788/gradio_api/queue/join "HTTP/1.1 200 OK"
+2025-04-06 15:53:10,609 - httpx - INFO - HTTP Request: GET http://127.0.0.1:7788/gradio_api/queue/data?session_hash=1a853828-ca2f-490f-a31b-feb9901389f7 "HTTP/1.1 200 OK"
+2025-04-06 15:53:12,456 - httpx - INFO - HTTP Request: GET http://127.0.0.1:7788/gradio_api/file=C:\Users\jayan\AppData\Local\Temp\gradio\c914252a7984b84bd4389609238e259b5abb68dda04f8f176b276a97f912e09f\image.webp "HTTP/1.1 200 OK"
+2025-04-06 15:53:12,469 - omniparser_sim - WARNING - Could not find 'path' in annotated image result: C:\Users\jayan\AppData\Local\Temp\gradio\3b67e070a291f7bc2e55e7267848662163382cb14c3a1b7a56b045809eedd77a\image.webp. Proceeding without annotated image.
+2025-04-06 15:53:12,475 - omniparser_sim - INFO - Successfully parsed 38 elements from Omniparser.
+2025-04-06 15:53:12,476 - __main__ - WARNING - No annotated screenshot available from Omniparser.
+2025-04-06 15:53:12,476 - __main__ - INFO - Getting next action from LLM...
+2025-04-06 15:53:12,476 - llm_handler - INFO - --- Sending Request to LLM ---
+2025-04-06 15:53:12,477 - llm_handler - INFO - Sending 1 image(s) to LLM: original screenshot
+2025-04-06 15:53:15,894 - llm_handler - INFO - LLM suggested action: {'action': 'TAP', 'element_index': 13}
+2025-04-06 15:53:15,895 - llm_handler - INFO - LLM reasoning: The email and password fields have been populated.  Element 13 ('Next') is the interactive element to submit the form and proceed.  Previous actions indicate that tapping 'Next' will proceed to the next step after email and password are entered.
+2025-04-06 15:53:15,896 - __main__ - INFO - Executing action: {'action': 'TAP', 'element_index': 13}
+2025-04-06 15:53:15,896 - action_executor - INFO - Executing TAP on element 13 ('Next' at (539, 2129)
+2025-04-06 15:53:15,896 - adb_controller - INFO - Tapping at coordinates: (539, 2129)
+2025-04-06 15:53:16,039 - adb_controller - INFO - Waiting for 2.0 seconds.
+2025-04-06 15:53:18,040 - __main__ - INFO - --- Step 7 / 15 ---
+2025-04-06 15:53:18,041 - __main__ - INFO - Taking screenshot...
+2025-04-06 15:53:18,591 - __main__ - INFO - Analyzing screenshot with Omniparser...
+2025-04-06 15:53:18,591 - omniparser_sim - INFO - --- Calling REAL Omniparser service at http://127.0.0.1:7788/ ---
+2025-04-06 15:53:18,927 - httpx - INFO - HTTP Request: GET http://127.0.0.1:7788/config "HTTP/1.1 200 OK"
+2025-04-06 15:53:19,254 - httpx - INFO - HTTP Request: GET http://127.0.0.1:7788/gradio_api/info?serialize=False "HTTP/1.1 200 OK"
+2025-04-06 15:53:19,694 - httpx - INFO - HTTP Request: GET http://127.0.0.1:7788/gradio_api/heartbeat/cd3c5f74-3e7e-465c-9ca3-6e1b4a6f1b20 "HTTP/1.1 200 OK"
+2025-04-06 15:53:19,739 - httpx - INFO - HTTP Request: POST http://127.0.0.1:7788/gradio_api/upload "HTTP/1.1 200 OK"
+2025-04-06 15:53:20,089 - httpx - INFO - HTTP Request: POST http://127.0.0.1:7788/gradio_api/queue/join "HTTP/1.1 200 OK"
+2025-04-06 15:53:22,644 - httpx - INFO - HTTP Request: GET http://127.0.0.1:7788/gradio_api/queue/data?session_hash=cd3c5f74-3e7e-465c-9ca3-6e1b4a6f1b20 "HTTP/1.1 200 OK"
+2025-04-06 15:53:24,513 - httpx - INFO - HTTP Request: GET http://127.0.0.1:7788/gradio_api/file=C:\Users\jayan\AppData\Local\Temp\gradio\2201d3eb528656d641e3dd2ebb7c1e3fc8be93780df3594b43f6152eeb83f60d\image.webp "HTTP/1.1 200 OK"
